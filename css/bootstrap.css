@@ -2367,9 +2367,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #7b6f65;
-  background-color: transparent;
-  border-color: #7b6f65;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: #fff;
+  position: relative;
+  z-index: 99;
+  margin-top: 0.5em;
+  width: 24%;
 }
 
 .btn-tab{
@@ -2382,13 +2386,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #7b6f65;
+  color: #333;
+  background-color: #F8DA7A;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #7b6f65;
+  color: #000;
+  background-color: #F8DA7A;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -5740,6 +5744,7 @@ a.close.disabled {
   height: 100%;
   overflow: hidden;
   outline: 0;
+  padding: 0;
 }
 
 .modal-dialog {
@@ -5887,7 +5892,8 @@ a.close.disabled {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0.3rem;
+  text-align: center;
 }
 
 .modal-footer {
@@ -5938,7 +5944,7 @@ a.close.disabled {
     height: min-content;
   }
   .modal-sm {
-    max-width: 600px;
+    max-width: 800px;
   }
 }
 

@@ -67,14 +67,9 @@
                   <img src={{website.img}}>
                   <span class="card-body" data-toggle="modal" data-target="#{{website.modal}}">
                     <div class="card-box">
-                      <p class="card-title">{{website.name}}</p>
-                      <a class="btn btn-tab">{{website.tab}}</a>
+                      <p class="btn btn-tab">{{website.tab}}</p>
                     </div>
                   </span>
-                </span>
-                <span class="card-link">
-                  <a href="{{website.link}}" target="_blank" v-if="website.weblink" class="btn btn-primary">前往網站</a>
-                  <a class="btn btn-disable" v-if="!website.weblink">{{website.link}}</a>
                 </span>
               </div>
             </div>
@@ -118,7 +113,7 @@
         <p class="m-title animated">技能軟體</p>
         <p class="s-title animated">SKILLS</p>
         <div class="skill-box animated">
-          <div class="row">
+          <div class="row" style="justify-content: center;">
             <!-- <ul class="col-lg-3 offset-lg-0 col-md-4 offset-md-2">
               <p class="title">文字編輯器</p>
               <li v-for="skill_t in skill_ts">
@@ -126,14 +121,14 @@
                 <span>{{skill_t.name}}</span>
               </li>
             </ul> -->
-            <ul class="col-lg-3 offset-lg-0 col-md-4">
+            <ul class="col-lg-3 col-md-4">
               <p class="title">設計繪圖</p>
               <li v-for="skill_d in skill_ds">
                 <img src="{{skill_d.icon}}">
                 <span>{{skill_d.name}}</span>
               </li>
             </ul>
-            <ul class="col-lg-3 offset-lg-0 col-md-4 offset-md-2">
+            <ul class="col-lg-3 col-md-4">
               <p class="title">前端切版</p>
               <li v-for="skill_web in skill_webs">
                 <img src="{{skill_web.icon}}">
@@ -196,6 +191,7 @@
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <img src="{{website.caseimg}}">
+        <a href="{{website.link}}" target="_blank" v-if="website.weblink" class="btn btn-primary">前往網站</a>
       </div>
     </div>
   </div>
