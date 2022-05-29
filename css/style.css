@@ -716,6 +716,7 @@ nav.nav-right.nav-open {
 #about{
   max-width: 1400px;
   background-color: #e0dbbe;
+  margin-bottom: 0;
 }
 
 #about .about__wall{
@@ -852,7 +853,8 @@ li.year span{
 
 /*--------contact----------*/
 #contact{
-  height: 70vh;
+  padding-top: 50px;
+  margin-top: 50px;
 }
 
 #contact .contentPage{
@@ -912,6 +914,10 @@ li.year span{
 
   #about .about__wall{
     padding-top: 200px;
+  }
+
+  .ex-box .ex-list .ex-list_wall{
+    margin-top: 2rem;
   }
 }
 
